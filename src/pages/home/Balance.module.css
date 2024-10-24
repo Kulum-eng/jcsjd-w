@@ -1,0 +1,97 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.card {
+  position: relative;
+  width: 350px;
+  height: 200px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  clip-path: path(
+    "M 0 20 A 20 20 0 0 1 20 0 H 270 Q 320 0 320 50 V 0 H 350 A 20 20 0 0 1 370 20 V 180 A 20 20 0 0 1 350 200 H 20 A 20 20 0 0 1 0 180 Z"
+  );
+
+  /* Mueve la tarjeta 3cm a la izquierda y 1cm hacia abajo */
+  transform: translateX(-14cm) translateY(0.8cm);
+}
+
+.textContent {
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding: 1.5rem;
+}
+
+.title {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.balanceAmount {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.percentage {
+  background-color: #0acf83;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  color: white;
+}
+
+/* Waves Animation */
+.wave {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 35%;
+  animation: wave-animation 6s infinite linear;
+  opacity: 0.6;
+}
+
+.wave1 {
+  top: -75%;
+  left: -50%;
+  animation-delay: 0s;
+}
+
+.wave2 {
+  top: -80%;
+  left: -60%;
+  animation-delay: 2s;
+}
+
+.wave3 {
+  top: -85%;
+  left: -70%;
+  animation-delay: 4s;
+}
+
+/* Animation Keyframes */
+@keyframes wave-animation {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(15px) rotate(180deg);
+  }
+  100% {
+    transform: translateY(0) rotate(360deg);
+  }
+}

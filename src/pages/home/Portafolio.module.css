@@ -1,0 +1,93 @@
+.container {
+  background-color: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  width: 70%; /* Reducimos el ancho general */
+  max-width: 350px; /* Limitar ancho máximo */
+  height: 300px;
+  overflow: hidden;
+  margin: 0 auto; /* Centrar horizontalmente */
+  position: relative; /* Permitir ajustes con top y left */
+  top: 2cm; /* Mover 2 cm hacia abajo */
+  left: -14cm; /* Mover 14 cm hacia la izquierda */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6b46c1;
+}
+
+.listContainer {
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.userList {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+}
+
+.userItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  height: 48px;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.userName {
+  font-weight: 600;
+}
+
+.userDescription {
+  font-size: 0.75rem;
+  color: #718096;
+}
+
+.userRating {
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+}
+
+/* Estilo para estrellas llenas */
+.starFilled {
+  color: #f6ad55;
+  font-size: 1.25rem;
+}
+
+/* Estilo para estrellas vacías */
+.starEmpty {
+  color: #e2e8f0;
+  font-size: 1.25rem;
+}
